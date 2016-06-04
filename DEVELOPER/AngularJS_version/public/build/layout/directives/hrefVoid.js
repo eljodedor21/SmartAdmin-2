@@ -1,0 +1,1 @@
+define(["layout/module"],function(a){"use strict";a.registerDirective("hrefVoid",function(){return{restrict:"A",link:function(a,b){b.attr("href","#"),b.on("click",function(a){a.preventDefault(),a.stopPropagation()})}}})});

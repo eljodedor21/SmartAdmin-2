@@ -1,0 +1,1 @@
+define(["modules/forms/module","clockpicker"],function(a){"use strict";return a.registerDirective("smartClockpicker",function(){return{restrict:"A",compile:function(a){a.removeAttr("smart-clockpicker data-smart-clockpicker");var b={placement:"top",donetext:"Done"};a.clockpicker(b)}}})});

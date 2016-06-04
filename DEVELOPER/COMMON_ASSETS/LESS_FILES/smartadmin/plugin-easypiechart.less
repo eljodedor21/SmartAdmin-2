@@ -1,0 +1,41 @@
+.easy-pie-title {
+    display: inline-block;
+    margin: 10px 6px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 100px;
+    height: 19px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.easy-pie-title .icon-color-good, .easy-pie-title .icon-color-bad {
+    font-size: 18px;
+}
+.easy-pie-chart {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    .percent {
+        color: #444;
+        display: block;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: -10px;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        .fa {
+            display: none;
+        }
+    }
+}
+.degree-sign:after, .percent-sign:after {
+    content: " %";
+    line-height: normal;
+}

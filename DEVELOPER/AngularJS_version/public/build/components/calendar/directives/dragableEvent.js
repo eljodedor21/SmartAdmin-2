@@ -1,0 +1,1 @@
+define(["components/calendar/module"],function(a){"use strict";a.registerDirective("dragableEvent",["$log",function(){return{restrict:"A",link:function(a,b){var c=b.scope().event;b.data("eventObject",c),b.draggable({zIndex:999,revert:!0,revertDuration:0})}}}])});

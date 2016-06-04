@@ -1,0 +1,65 @@
+.bootstrap-duallistbox-container {
+  .buttons {
+    width: 100%;
+    margin-bottom: -1px;
+  }
+  label {
+    display: block;
+    margin-top:0px !important;
+    font-weight: 400 !important;
+  }
+  .info {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 11px;
+  }
+  .clear1, .clear2 {
+    display: none;
+    font-size: 10px;
+  }
+  .box1.filtered .clear1, .box2.filtered .clear2 {
+    display: inline-block;
+  }
+  .move, .remove {
+    width: 60%;
+  }
+  .btn-group .btn {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  select {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .moveall, .removeall {
+    width: 40%;
+  }
+  &.bs2compatible .btn-group > .btn + .btn {
+    margin-left: 0;
+  }
+  select {
+    width: 100%;
+    height: 300px;
+    padding: 0;
+  }
+  .filter {
+    display: inline-block;
+    width: 100%;
+    height: 31px;
+    margin: 0 0 5px 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    &.placeholder {
+      color: #aaa;
+    }
+  }
+  &.moveonselect {
+    .move, .remove {
+      display: none;
+    }
+    .moveall, .removeall {
+      width: 100%;
+    }
+  }
+}

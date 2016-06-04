@@ -1,0 +1,1 @@
+define(["modules/ui/module","jquery-ui"],function(a){"use strict";a.registerDirective("smartJquiDialogLauncher",function(){return{restrict:"A",compile:function(a,b){a.removeAttr("smart-jqui-dialog-launcher data-smart-jqui-dialog-launcher"),a.on("click",function(a){$(b.smartJquiDialogLauncher).dialog("open"),a.preventDefault()})}}})});

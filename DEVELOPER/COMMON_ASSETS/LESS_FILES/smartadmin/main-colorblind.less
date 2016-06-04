@@ -1,0 +1,93 @@
+/*
+ * SmartAdmin Colorblind CSS
+ * Description: This is an experimental CSS based on 
+ * several design factors and pointers derived from
+ * http://blog.templatemonster.com/2012/03/21/designing-colorblind-friendly-website/
+ * 
+ * While this may not be 100% accurate, but makes
+ * SmartAdmin's components much more accessable
+ * for the colorblind
+ */
+
+
+.colorblind-friendly .alert, 
+.colorblind-friendly .btn-primary {
+	color: #FFFFFF;
+}
+
+.colorblind-friendly .btn:hover {
+	background:#fff;
+	color:#333;
+	border-color:#333;
+}
+
+.colorblind-friendly .alert-danger,
+.colorblind-friendly .btn-danger {
+	background-image: url('@{base-url}/colorblind-friendly/pt1.png');
+	border-color: #272727;
+	background-color: #303030;
+}
+
+.colorblind-friendly .alert-success,
+.colorblind-friendly .btn-success {
+	background-image: url('@{base-url}/colorblind-friendly/pt2.png');
+	border-color: #FF00EB;
+	background-color: #1E5E00;
+}
+
+.colorblind-friendly .alert-warning,
+.colorblind-friendly .btn-warning {
+	background-image: url('@{base-url}/colorblind-friendly/pt3.png');
+	border-color: #5F4415;
+	background-color: #A07A00;
+}
+
+.colorblind-friendly .alert-info,
+.colorblind-friendly .btn-info {
+	border-color: #FF9900;
+	background-color: #002E70;
+}
+
+/*
+ * WIDGETs
+ */
+
+.colorblind-friendly .jarviswidget-ctrls .button-icon:hover {
+	background-color: #333;
+	color: #fff !important;
+}
+
+.colorblind-friendly .jarviswidget-color-blueDark .jarviswidget-ctrls .button-icon:hover,
+.colorblind-friendly .jarviswidget-color-darken .jarviswidget-ctrls .button-icon:hover,
+.colorblind-friendly .jarviswidget-color-blue .jarviswidget-ctrls .button-icon:hover{
+	background-color: #fff;
+	color: #333 !important;
+}
+
+.colorblind-friendly .jarviswidget {
+	position:relative;
+}
+
+.colorblind-friendly .jarviswidget:hover:before {
+	position: absolute;
+	top: -3px;
+	left: -5px;
+	right: -5px;
+	bottom: 0;
+	border: 6px solid #333;
+	visibility: visible;
+	overflow: visible;
+	height: 103%;
+	z-index: 0;
+	border-bottom-width: 10px;
+}
+
+/*
+ * TABS
+ */
+
+.colorblind-friendly .nav>li:not(.active)>a:focus, 
+.colorblind-friendly .nav>li:not(.active)>a:hover {
+	background-color: #303030;
+	color: #fff !important;
+}

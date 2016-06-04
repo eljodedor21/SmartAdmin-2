@@ -1,0 +1,18 @@
+.no-menu {
+  #left-panel, #hide-menu, #logout {
+    display: none !important;
+  }
+  #main {
+    margin: 0px !important;
+  }
+  #mobile-profile-img {
+    display: block !important;
+    a.userdropdown img {
+      width: 30px;
+      margin-top: 5px;
+      margin-left: 2px;
+      border-radius: 3px;
+      border: 1px solid #797979!important;
+    }
+  }
+}

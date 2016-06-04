@@ -1,0 +1,1 @@
+There are plans to release PSD versions of SmartAdmin Elements - which will be hosted in this folder in the future release

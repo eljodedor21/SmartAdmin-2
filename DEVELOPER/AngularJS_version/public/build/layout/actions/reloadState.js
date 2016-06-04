@@ -1,0 +1,1 @@
+define(["layout/module"],function(a){"use strict";a.registerDirective("reloadState",["$rootScope",function(a){return{restrict:"A",compile:function(b){b.removeAttr("reload-state data-reload-state"),b.on("click",function(b){a.$state.transitionTo(a.$state.current,a.$stateParams,{reload:!0,inherit:!1,notify:!0}),b.preventDefault()})}}}])});

@@ -1,0 +1,1 @@
+define(["modules/ui/module","jquery-nestable"],function(a){"use strict";return a.registerDirective("smartNestable",function(){return{restrict:"A",scope:{group:"@",output:"="},link:function(a,b,c){var d={};a.group&&(d.group=a.group),b.nestable(d),c.output&&(b.on("change",function(){a.$apply(function(){a.output=b.nestable("serialize")})}),a.output=b.nestable("serialize"))}}})});

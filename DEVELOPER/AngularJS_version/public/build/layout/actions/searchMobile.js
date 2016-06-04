@@ -1,0 +1,1 @@
+define(["layout/module"],function(a){"use strict";a.registerDirective("searchMobile",function(){return{restrict:"A",compile:function(a){a.removeAttr("search-mobile data-search-mobile"),a.on("click",function(a){$("body").addClass("search-mobile"),a.preventDefault()}),$("#cancel-search-js").on("click",function(a){$("body").removeClass("search-mobile"),a.preventDefault()})}}})});

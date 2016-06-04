@@ -1,0 +1,26 @@
+{
+  "name": "smartadmin-grunt-tools",
+  "smartadmin": {
+    "public": "../public/",
+    "plugin": "../public/plugin/",
+    "vendor": "../public/vendor/",
+    "temp": "../public/tmp/",
+    "build": "../public/build/"
+  },
+  "version": "0.0.1",
+  "description": "Smartadmin grunt tools",
+  "main": "Gruntfile.js",
+  "author": "Griga Yura",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "grunt": "^0.4.5",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-ng-annotate": "^0.4.0",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-copy": "^0.7.0",
+    "grunt-html2js": "^0.2.9",
+    "fs-extra": "^0.12.0",
+    "grunt-contrib-requirejs": "^0.4.4"
+  }
+}

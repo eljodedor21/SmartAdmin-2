@@ -1,0 +1,303 @@
+<aside id="left-panel">
+
+    <!-- User info -->
+    <div login-info></div>
+    <!-- end user info -->
+
+    <nav>
+        <!-- NOTE: Notice the gaps after each icon usage <i></i>..
+        Please note that these links work a bit different than
+        traditional href="" links. See documentation for details.
+        -->
+
+        <ul data-smart-menu>
+            <li data-ui-sref-active="active">
+                <a data-ui-sref="app.dashboard" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span
+                        class="menu-item-parent">{{getWord('Dashboard')}}</span></a>
+            </li>
+            <li data-ui-sref-active="active">
+                <a data-ui-sref="app.inbox.folder" title="Inbox">
+                    <i class="fa fa-lg fa-fw fa-inbox"></i> <span class="menu-item-parent">{{getWord('Inbox')}}</span><span
+                        unread-messages-count class="badge pull-right inbox-badge"></span></a>
+            </li>
+            <li data-menu-collapse>
+                <a href="#"><i class="fa fa-lg fa-fw fa-bar-chart-o"></i> <span class="menu-item-parent">{{getWord('Graphs')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.graphs.flot">{{getWord('Flot Chart')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.graphs.morris">{{getWord('Morris Charts')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.graphs.inline">{{getWord('Inline Charts')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.graphs.dygraphs">{{getWord('Dygraphs')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.graphs.chartjs">Chart.js <span
+                                class="badge pull-right inbox-badge bg-color-yellow">new</span></a>
+                    </li>
+                </ul>
+            </li>
+
+            <li data-menu-collapse>
+                <a href="#"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">{{getWord('Tables')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.tables.normal">{{getWord('Normal Tables')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.tables.datatables">{{getWord('Data Tables')}} <span
+                                class="badge inbox-badge bg-color-greenLight">v1.10</span></a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.tables.jqgrid">{{getWord('Jquery Grid')}}</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li data-menu-collapse>
+                <a href="#"><i class="fa fa-lg fa-fw fa-pencil-square-o"></i> <span class="menu-item-parent">{{getWord('Forms')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.elements">{{getWord('Smart Form Elements')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.layouts">{{getWord('Smart Form Layouts')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.validation">{{getWord('Smart Form Validation')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.bootstrapForms">{{getWord('Bootstrap Form Elements')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.bootstrapValidation">{{getWord('Bootstrap Form Validation')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.plugins">{{getWord('Form Plugins')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.wizards">{{getWord('Wizards')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.editors">{{getWord('Bootstrap Editors')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.dropzone">{{getWord('Dropzone')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.form.imageEditor">{{getWord('Image Cropping')}} <span class="badge pull-right inbox-badge bg-color-yellow">new</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse>
+                <a href="#"><i class="fa fa-lg fa-fw fa-desktop"></i> <span class="menu-item-parent">{{getWord('UI Elements')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.ui.general">{{getWord('General Elements')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.ui.buttons">{{getWord('Buttons')}}</a>
+                    </li>
+                    <li data-menu-collapse>
+                        <a href="#">{{getWord('Icons')}}</a>
+                        <ul>
+                            <li data-ui-sref-active="active">
+                                <a data-ui-sref="app.ui.iconsFa"><i class="fa fa-plane"></i> {{getWord('Font Awesome')}}</a>
+                            </li>
+                            <li data-ui-sref-active="active">
+                                <a data-ui-sref="app.ui.iconsGlyph" ><i class="glyphicon glyphicon-plane"></i> {{getWord('Glyph Icons')}}</a>
+                            </li>
+                            <li data-ui-sref-active="active">
+                                <a data-ui-sref="app.ui.iconsFlags" ><i class="fa fa-flag"></i> {{getWord('Flags')}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.ui.grid" >{{getWord('Grid')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.ui.treeView">{{getWord('Tree View')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.ui.nestableLists">{{getWord('Nestable Lists')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.ui.jqueryUi">{{getWord('JQuery UI')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.ui.typography">{{getWord('Typography')}}</a>
+                    </li>
+                    <li data-menu-collapse>
+                        <a href="#">{{getWord('Six Level Menu')}}</a>
+                        <ul>
+                            <li data-menu-collapse>
+                                <a href="#"><i class="fa fa-fw fa-folder-open"></i> {{getWord('Item #2')}}</a>
+                                <ul>
+                                    <li data-menu-collapse>
+                                        <a href="#"><i class="fa fa-fw fa-folder-open"></i> {{getWord('Sub #2.1')}} </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-fw fa-file-text"></i> {{getWord('Item #2.1.1')}}</a>
+                                            </li>
+                                            <li data-menu-collapse>
+                                                <a href="#"><i class="fa fa-fw fa-plus"></i>{{getWord('Expand')}}</a>
+                                                <ul>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-fw fa-file-text"></i> {{getWord('File')}}</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#"><i class="fa fa-fw fa-trash-o"></i> {{getWord('Delete')}}</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li data-menu-collapse>
+                                <a href="#"><i class="fa fa-fw fa-folder-open"></i> {{getWord('Item #3')}}</a>
+
+                                <ul>
+                                    <li data-menu-collapse>
+                                        <a href="#"><i class="fa fa-fw fa-folder-open"></i> {{getWord('3ed Level')}} </a>
+                                        <ul>
+                                            <li>
+                                                <a href="#"><i class="fa fa-fw fa-file-text"></i> {{getWord('File')}}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"><i class="fa fa-fw fa-file-text"></i> {{getWord('File')}}</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li data-ui-sref-active="active">
+                <a data-ui-sref="app.calendar" title="Calendar"><i class="fa fa-lg fa-fw fa-calendar"><em>3</em></i> <span
+                        class="menu-item-parent">{{getWord('Calendar')}}</span></a>
+            </li>
+            <li data-ui-sref-active="active">
+                <a data-ui-sref="app.widgets" title="Widgets"><i class="fa fa-lg fa-fw fa-list-alt"></i><span
+                        class="menu-item-parent">{{getWord('Widgets')}}</span></a>
+            </li>
+
+            <li data-menu-collapse>
+                <a  href="#" >
+                    <i class="fa fa-lg fa-fw fa-puzzle-piece"></i> <span class="menu-item-parent">{{getWord('App Views')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.appViews.projects"><i class="fa fa-file-text-o"></i> {{getWord('Projects')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.appViews.blogDemo"><i class="fa fa-paragraph"></i> {{getWord('Blog')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.appViews.galleryDemo"><i class="fa fa-picture-o"></i> {{getWord('Gallery')}}</a>
+                    </li>
+
+                    <li data-menu-collapse>
+                        <a href="#"><i class="fa fa-comments"></i> {{getWord('Forum Layout')}}</a>
+                        <ul>
+                            <li data-ui-sref-active="active">
+                                <a data-ui-sref="app.appViews.forumDemo"><i class="fa fa-picture-o"></i> {{getWord('General View')}}</a>
+                            </li>
+                            <li data-ui-sref-active="active">
+                                <a data-ui-sref="app.appViews.forumTopicDemo"><i class="fa fa-picture-o"></i> {{getWord('Topic View')}}</a>
+                            </li>
+                            <li data-ui-sref-active="active">
+                                <a data-ui-sref="app.appViews.forumPostDemo"><i class="fa fa-picture-o"></i> {{getWord('Post View')}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.appViews.profileDemo"><i class="fa fa-group"></i> {{getWord('Profile')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.appViews.timelineDemo"><i class="fa fa-clock-o"></i> {{getWord('Timeline')}}</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li data-ui-sref-active="active">
+                <a data-ui-sref="app.maps"><i class="fa fa-lg fa-fw fa-map-marker"></i> <span class="menu-item-parent">{{getWord('GMap Skins')}}</span><span class="badge bg-color-greenLight pull-right inbox-badge">9</span></a>
+            </li>
+
+            <li data-menu-collapse>
+                <a href="#"><i class="fa fa-lg fa-fw fa-windows"></i> <span class="menu-item-parent">{{getWord('Miscellaneous')}}</span></a>
+                <ul >
+                    <li>
+                        <a href="http://bootstraphunter.com/smartadmin-landing/" target="_blank">{{getWord('Landing Page')}} <i class="fa fa-external-link"></i></a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.misc.pricingTable">{{getWord('Pricing Tables')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.misc.invoice">{{getWord('Invoice')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="login">{{getWord('Login')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="register">{{getWord('Register')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="lock">{{getWord('Locked Screen')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.misc.error404">{{getWord('Error 404')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.misc.error500">{{getWord('Error 500')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.misc.blank">{{getWord('Blank Page')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.misc.emailTemplate">{{getWord('Email Template')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.misc.search">{{getWord('Search Page')}}</a>
+                    </li>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.misc.ckeditor">{{getWord('CK Editor')}}</a>
+                    </li>
+                </ul>
+            </li>
+
+          <li data-menu-collapse class="top-menu-invisible">
+                <a href="#"><i class="fa fa-lg fa-fw fa-cube txt-color-blue"></i> <span class="menu-item-parent">{{getWord('SmartAdmin Intel')}}</span></a>
+                <ul>
+                    <li data-ui-sref-active="active">
+                        <a data-ui-sref="app.smartAdmin.diffVer"><i class="fa fa-stack-overflow"></i> {{getWord('Different Versions')}}</a>
+                    </li>
+                    <!--<li data-ui-sref-active="active">
+                        <a data-ui-sref="app.smartAdmin.appLayout"><i class="fa fa-cube"></i> {{getWord('App Settings')}}</a>
+                    </li>-->
+                    <li>
+                        <a href="http://bootstraphunter.com/smartadmin/BUGTRACK/track_/documentation/index.html" target="_blank"><i class="fa fa-book"></i> {{getWord('Documentation')}}</a>
+                    </li>
+                    <li>
+                        <a href="http://bootstraphunter.com/smartadmin/BUGTRACK/track_/" target="_blank"><i class="fa fa-bug"></i> {{getWord('Bug Tracker')}}</a>
+                    </li>
+                </ul>
+            </li>
+            <li data-menu-collapse class="chat-users top-menu-invisible">
+                <a href="#"><i class="fa fa-lg fa-fw fa-comment-o"><em class="bg-color-pink flash animated">!</em></i> <span class="menu-item-parent">{{getWord('Smart Chat API')}} <sup>{{getWord('beta')}}</sup></span></a>
+                <div aside-chat-widget></div>
+            </li>
+        </ul>
+    </nav>
+
+  <span class="minifyme" data-action="minifyMenu" minify-menu>
+    <i class="fa fa-arrow-circle-left hit"></i>
+  </span>
+
+</aside>

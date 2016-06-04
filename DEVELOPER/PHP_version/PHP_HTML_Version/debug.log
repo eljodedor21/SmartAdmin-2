@@ -1,0 +1,69 @@
+[13-04-2014 07:29:25][Log] &lt;div class=&quot;jarviswidget some-cool-class&quot; id=&quot;my-id-here&quot; data-widget-colorbutton = &quot;false&quot; data-custom-attr=&quot;test&quot; data-some-id=&quot;12345&quot;&gt;<br />
+    &lt;header&gt;<br />
+        &lt;h2&gt;<br />
+            &lt;strong&gt;Default&lt;/strong&gt; &lt;i&gt;Widget&lt;/i&gt; PHP<br />
+        &lt;/h2&gt;<br />
+    &lt;/header&gt;<br />
+    &lt;div&gt;<br />
+        &lt;div class=&quot;jarviswidget-editbox&quot;&gt;<br />
+            &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;<br />
+            &lt;span class=&quot;note&quot;&gt;&lt;i class=&quot;fa fa-check text-success&quot;&gt;&lt;/i&gt; Change title to update and save instantly!&lt;/span&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;widget-body&quot;&gt;<br />
+            &lt;p&gt;<br />
+                Widget comes with a default 10 padding to the body which can be removed by adding the class <br />
+                &lt;code&gt;.no-padding&lt;/code&gt;<br />
+                to the <br />
+                &lt;code&gt;.widget-body&lt;/code&gt;<br />
+                class. The default widget also comes with 5 widget buttons as displayed on top right corner of the widget header. <br />
+            &lt;/p&gt;<br />
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-default btn-lg&quot;&gt; &lt;strong&gt;Big&lt;/strong&gt; &lt;i&gt;Button&lt;/i&gt; &lt;/a&gt;<br />
+        &lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+&lt;/div&gt;
+[13-04-2014 07:30:51][Log] &lt;div class=&quot;jarviswidget some-cool-class&quot; id=&quot;my-id-here&quot; data-widget-colorbutton = &quot;false&quot; data-custom-attr=&quot;test&quot; data-some-id=&quot;12345&quot;&gt;<br />
+    &lt;header&gt;<br />
+        &lt;h2&gt;<br />
+            &lt;strong&gt;Default&lt;/strong&gt; &lt;i&gt;Widget&lt;/i&gt; PHP<br />
+        &lt;/h2&gt;<br />
+    &lt;/header&gt;<br />
+    &lt;div&gt;<br />
+        &lt;div class=&quot;jarviswidget-editbox&quot;&gt;<br />
+            &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;<br />
+            &lt;span class=&quot;note&quot;&gt;&lt;i class=&quot;fa fa-check text-success&quot;&gt;&lt;/i&gt; Change title to update and save instantly!&lt;/span&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;widget-body&quot;&gt;<br />
+            &lt;p&gt;<br />
+                Widget comes with a default 10 padding to the body which can be removed by adding the class <br />
+                &lt;code&gt;.no-padding&lt;/code&gt;<br />
+                to the <br />
+                &lt;code&gt;.widget-body&lt;/code&gt;<br />
+                class. The default widget also comes with 5 widget buttons as displayed on top right corner of the widget header. <br />
+            &lt;/p&gt;<br />
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-default btn-lg&quot;&gt; &lt;strong&gt;Big&lt;/strong&gt; &lt;i&gt;Button&lt;/i&gt; &lt;/a&gt;<br />
+        &lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+&lt;/div&gt;
+[13-04-2014 07:31:32][Log] &lt;div class=&quot;jarviswidget some-cool-class&quot; id=&quot;my-id-here&quot; data-widget-colorbutton = &quot;false&quot; data-custom-attr=&quot;test&quot; data-some-id=&quot;12345&quot;&gt;<br />
+    &lt;header&gt;<br />
+        &lt;h2&gt;<br />
+            &lt;strong&gt;Default&lt;/strong&gt; &lt;i&gt;Widget&lt;/i&gt; PHP<br />
+        &lt;/h2&gt;<br />
+    &lt;/header&gt;<br />
+    &lt;div&gt;<br />
+        &lt;div class=&quot;jarviswidget-editbox&quot;&gt;<br />
+            &lt;input class=&quot;form-control&quot; type=&quot;text&quot;&gt;<br />
+            &lt;span class=&quot;note&quot;&gt;&lt;i class=&quot;fa fa-check text-success&quot;&gt;&lt;/i&gt; Change title to update and save instantly!&lt;/span&gt;<br />
+        &lt;/div&gt;<br />
+        &lt;div class=&quot;widget-body&quot;&gt;<br />
+            &lt;p&gt;<br />
+                Widget comes with a default 10 padding to the body which can be removed by adding the class <br />
+                &lt;code&gt;.no-padding&lt;/code&gt;<br />
+                to the <br />
+                &lt;code&gt;.widget-body&lt;/code&gt;<br />
+                class. The default widget also comes with 5 widget buttons as displayed on top right corner of the widget header. <br />
+            &lt;/p&gt;<br />
+            &lt;a href=&quot;javascript:void(0);&quot; class=&quot;btn btn-default btn-lg&quot;&gt; &lt;strong&gt;Big&lt;/strong&gt; &lt;i&gt;Button&lt;/i&gt; &lt;/a&gt;<br />
+        &lt;/div&gt;<br />
+    &lt;/div&gt;<br />
+&lt;/div&gt;

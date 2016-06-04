@@ -1,0 +1,1 @@
+define(["layout/module"],function(a){"use strict";a.registerDirective("dismisser",function(){return{restrict:"A",compile:function(a){a.removeAttr("dismisser data-dissmiser");var b='<button class="close">&times;</button>';a.prepend(b),a.on("click",">button.close",function(){a.fadeOut("fast",function(){$(this).remove()})})}}})});

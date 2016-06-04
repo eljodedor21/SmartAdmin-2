@@ -1,0 +1,139 @@
+/*
+ * LOGIN/REGISTER/EXTR PAGE
+ */
+
+.display-image {
+	margin-top:-60px; 
+	margin-right:20px;
+}
+
+.terms-body {
+	max-height:400px;
+	overflow:auto;
+}
+
+#extr-page {
+	background:@white;
+	overflow:visible;
+}
+#extr-page .container {
+	border:none;
+}
+
+#extr-page #header {
+	margin:0;
+	height: 71px;
+	border-bottom: 1px solid @gray-lighter !important;
+	overflow: hidden;
+	padding: 0 30px;
+	background-clip: padding-box;
+	border-width: 0;
+	min-height: 28px;
+	background: @gray-lightest !important;
+	/*margin-bottom:20px;*/
+}
+
+#extr-page #main {
+	padding-top:20px;
+}
+
+#extr-page #header #logo {
+	margin-top:22px;
+	margin-left:0px;
+}	
+	
+#extr-page #header #logo img {
+	width:137px;
+}
+
+#extr-page-header-space {
+	float:right;
+	text-align:right;
+	display:block;
+	vertical-align:middle;
+	line-height:71px;
+}	
+
+#extr-page-header-space >:first-child {
+	font-size: 13px;
+	margin-right: 14px;
+	vertical-align: -3px;
+	font-weight:400;
+}
+
+#extr-page-header-space .btn {
+	font-weight:bold;
+	text-transform: uppercase;
+}
+
+#extr-page-header-space > * {
+	display:inline-block;
+}
+
+#extr-page #main {
+	background:@white;
+	margin:0;
+}
+
+#extr-page .hero {
+	background-image: url("@{base-url}/gradient/login.png");
+	background-repeat: no-repeat;
+	background-position: 0 137px;
+	height: 360px;
+	width: 100%;
+	float:left;
+}
+
+#extr-page h4.paragraph-header {
+	color: #565656;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 22px;
+	margin-top: 15px;
+	width: 270px;
+}
+
+#extr-page h5.about-heading {
+	color: #565656;
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 24px;
+	margin: 0 0 5px;
+}
+
+#extr-page .login-header-big {
+	font-weight:400;
+}
+
+#extr-page .login-desc-box-l{
+	min-height:350px;
+	width: 50%;
+}
+
+#extr-page .login-app-icons {
+	vertical-align: top;
+	margin-top: 90px;
+	width: 300px;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 880px) {
+	#extr-page #header {
+		padding: 0 5px !important;
+	}
+}
+
+@media only screen and (min-width: 0px) and (max-width: 679px) {
+	#extr-page #header {
+		padding: 0 5px !important;
+	}	
+	
+	#extr-page #header #logo img {
+		width: 135px;
+	}
+	
+	#extr-page #header #logo {
+		margin-top: 22px;
+	}
+}

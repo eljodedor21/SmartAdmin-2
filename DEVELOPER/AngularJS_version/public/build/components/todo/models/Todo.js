@@ -1,0 +1,1 @@
+define(["app"],function(a){"use strict";return a.factory("Todo",["$resource",function(a){return a("api/todos.json",{id:"@_id"})}])});

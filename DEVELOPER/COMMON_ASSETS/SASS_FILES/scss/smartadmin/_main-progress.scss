@@ -1,0 +1,389 @@
+/*
+ * PROGRESS BARS
+ */
+
+.progress-micro {
+	height: $progressbar-micro !important;
+	line-height:$progressbar-micro !important;
+}
+
+.progress-xs {
+	height: $progressbar-xs !important;
+	line-height:$progressbar-xs !important;
+}
+
+.progress-sm {
+	height: $progressbar-sm !important;
+	line-height:$progressbar-sm !important;	 	
+}
+
+.progress-lg {
+	height: $progressbar-lg !important;
+	line-height:$progressbar-lg !important;
+}
+
+.progress .progress-bar {
+  position: absolute;
+  overflow: hidden;
+  line-height: 20px;
+}
+
+.progress .progressbar-back-text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.progress .progressbar-front-text {
+  display: block;
+  width: 100%;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.progress.right .progress-bar {
+  right: 0;
+}
+
+.progress.right .progressbar-front-text {
+  position: absolute;
+  right: 0;
+}
+
+.progress.vertical {
+  width: 25px;
+  height: 100%;
+  min-height:150px;
+  margin-right: 20px;
+  display:inline-block;
+  margin-bottom:0px;
+}
+
+.progress.wide-bar {
+	width: 40px;
+}
+
+.progress.vertical.bottom {
+  position: relative;
+}
+
+.progress.vertical.bottom .progressbar-front-text {
+  position: absolute;
+  bottom: 0;
+}
+
+.progress.vertical .progress-bar {
+  width: 100%;
+  height: 0;
+  -webkit-transition: height 0.6s ease;
+          transition: height 0.6s ease;
+}
+
+.progress.vertical.bottom .progress-bar {
+  position: absolute;
+  bottom: 0;
+}
+
+.progress {
+	position: relative;
+	margin-bottom: 20px;
+	overflow: hidden;
+	height: 22px;
+	background: $gray-lighter;
+	box-shadow: 0 1px 0 transparent, 0 0 0 1px lighten( $gray-light, 29%) inset; 
+	-webkit-box-shadow: 0 1px 0 transparent, 0 0 0 1px lighten( $gray-light, 29%) inset;
+	-moz-box-shadow: 0 1px 0 transparent, 0 0 0 1px lighten( $gray-light, 29%) inset;
+	
+	border-radius:$progressbar-radius;
+	-moz-border-radius:$progressbar-radius;
+	-webkit-border-radius:$progressbar-radius;
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 11px;
+  color: $white;
+  text-align: center;
+  background-color: $blue;
+  -webkit-box-shadow: inset 0 -1px 0 rgba(red($black), green($black), blue($black), 0.15);
+          box-shadow: inset 0 -1px 0 rgba(red($black), green($black), blue($black), 0.15);
+  font-weight:bold;
+  text-shadow: 0 -1px 0 rgba(red($black), green($black), blue($black), 0.25);         
+  background-image:url("#{$base-url}/pattern/overlay-pattern.png");      
+}
+
+.progress-striped .progress-bar {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-size: 40px 40px;
+}
+
+.progress.active .progress-bar {
+  -webkit-animation: progress-bar-stripes 2s linear infinite;
+     -moz-animation: progress-bar-stripes 2s linear infinite;
+      -ms-animation: progress-bar-stripes 2s linear infinite;
+       -o-animation: progress-bar-stripes 2s linear infinite;
+          animation: progress-bar-stripes 2s linear infinite;
+}
+
+.progress-bar-danger {
+  background-color: $brand-danger;
+}
+
+.progress-striped .progress-bar-danger {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-success {
+  background-color: $brand-success;
+}
+
+.progress-striped .progress-bar-success {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-warning {
+  background-color: $brand-warning;
+}
+
+.progress-striped .progress-bar-warning {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+}
+
+.progress-bar-info {
+  background-color: $brand-info;
+}
+
+.progress-striped .progress-bar-info {
+  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, rgba(red($white), green($white), blue($white), 0.15)), color-stop(0.75, transparent), to(transparent));
+  background-image: -webkit-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: -moz-linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+  background-image: linear-gradient(45deg, rgba(red($white), green($white), blue($white), 0.15) 25%, transparent 25%, transparent 50%, rgba(red($white), green($white), blue($white), 0.15) 50%, rgba(red($white), green($white), blue($white), 0.15) 75%, transparent 75%, transparent);
+}
+	
+
+.progress-info .bar, .progress .bar-info {
+	background:  $brand-info;
+}
+
+.vertical-bars {
+	padding:0;
+	margin:0;
+}
+
+.vertical-bars:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+}
+.vertical-bars li {
+	padding: 14px 0;
+	width: 25%;
+	display: block;
+	float: left;
+	text-align: center;
+}
+.vertical-bars li:first-child {
+	border-left: none;
+}
+.vertical-bars > li > .progress.vertical:first-child {
+	margin-left: auto;
+}
+.vertical-bars > li > .progress.vertical {
+	margin: 0 auto;
+	float: none;
+}
+
+
+/*
+ * BAR HOLDER
+ */
+.bar-holder:first-child {
+	border-top: none;
+}
+.bar-holder {
+	padding: 18px 15px;
+}
+.bar-holder .progress {
+	margin:0;
+}
+
+/* progress bar colors */
+
+[data-progressbar-value] {
+  margin-top:15px !important;
+  overflow:visible;
+  margin-bottom:0px;
+}
+
+.dataTable [data-progressbar-value] {
+  min-width:70px;
+}
+
+[data-progressbar-value="100"]:before,
+[data-progressbar-value="100"]:after,
+[data-progressbar-value]:before,
+[data-progressbar-value]:after {
+  position: absolute;
+  background: none;
+  font-size: 11px;
+  top: -12px;
+}
+
+[data-progressbar-value]:before {
+  content: attr(data-progressbar-value);
+  left:attr(data-progressbar-value) + px;
+}
+[data-progressbar-value]:after {
+  content: "%";
+  left:13px;
+}
+
+[data-progressbar-value="1"] > .progress-bar { width:1%; background:$brand-danger;}
+[data-progressbar-value="2"] > .progress-bar { width:2%; background:$brand-danger;}
+[data-progressbar-value="3"] > .progress-bar { width:3%; background:$brand-danger;}
+[data-progressbar-value="4"] > .progress-bar { width:4%; background:$brand-danger;}
+[data-progressbar-value="5"] > .progress-bar { width:5%; background:$brand-danger;}
+[data-progressbar-value="6"] > .progress-bar { width:6%; background:$brand-danger;}
+[data-progressbar-value="7"] > .progress-bar { width:7%; background:$brand-danger;}
+[data-progressbar-value="8"] > .progress-bar { width:8%; background:$brand-danger;}
+[data-progressbar-value="9"] > .progress-bar { width:9%; background:$brand-danger;}
+[data-progressbar-value="10"] > .progress-bar { width:10%; background:lighten($brand-danger,10%)}
+
+[data-progressbar-value="11"] > .progress-bar { width:11%; background:$brand-warning;}
+[data-progressbar-value="12"] > .progress-bar { width:12%; background:$brand-warning;}
+[data-progressbar-value="13"] > .progress-bar { width:13%; background:$brand-warning;}
+[data-progressbar-value="14"] > .progress-bar { width:14%; background:$brand-warning;}
+[data-progressbar-value="15"] > .progress-bar { width:15%; background:$brand-warning;}
+[data-progressbar-value="16"] > .progress-bar { width:16%; background:$brand-warning;}
+[data-progressbar-value="17"] > .progress-bar { width:17%; background:$brand-warning;}
+[data-progressbar-value="18"] > .progress-bar { width:18%; background:$brand-warning;}
+[data-progressbar-value="19"] > .progress-bar { width:19%; background:$brand-warning;}
+[data-progressbar-value="20"] > .progress-bar { width:20%; background:$brand-warning;}
+[data-progressbar-value="21"] > .progress-bar { width:21%; background:$brand-warning;}
+[data-progressbar-value="22"] > .progress-bar { width:22%; background:$brand-warning;}
+[data-progressbar-value="23"] > .progress-bar { width:23%; background:$brand-warning;}
+[data-progressbar-value="24"] > .progress-bar { width:24%; background:$brand-warning;}
+[data-progressbar-value="25"] > .progress-bar { width:25%; background:$brand-warning;}
+[data-progressbar-value="26"] > .progress-bar { width:26%; background:$brand-warning;}
+[data-progressbar-value="27"] > .progress-bar { width:27%; background:$brand-warning;}
+[data-progressbar-value="28"] > .progress-bar { width:28%; background:$brand-warning;}
+[data-progressbar-value="29"] > .progress-bar { width:29%; background:$brand-warning;}
+[data-progressbar-value="30"] > .progress-bar { width:30%; background:$brand-warning;}
+
+[data-progressbar-value="31"] > .progress-bar { width:31%; background:$brand-warning;}
+[data-progressbar-value="32"] > .progress-bar { width:32%; background:$brand-warning;}
+[data-progressbar-value="33"] > .progress-bar { width:33%; background:$brand-warning;}
+[data-progressbar-value="34"] > .progress-bar { width:34%; background:$brand-warning;}
+[data-progressbar-value="35"] > .progress-bar { width:35%; background:$brand-warning;}
+[data-progressbar-value="36"] > .progress-bar { width:36%; background:$brand-warning;}
+[data-progressbar-value="37"] > .progress-bar { width:37%; background:$brand-warning;}
+[data-progressbar-value="38"] > .progress-bar { width:38%; background:$brand-warning;}
+[data-progressbar-value="39"] > .progress-bar { width:39%; background:$brand-warning;}
+[data-progressbar-value="40"] > .progress-bar { width:40%; background:$brand-warning;}
+
+[data-progressbar-value="41"] > .progress-bar { width:41%; background:$darken;}
+[data-progressbar-value="42"] > .progress-bar { width:42%; background:$darken;}
+[data-progressbar-value="43"] > .progress-bar { width:43%; background:$darken;}
+[data-progressbar-value="44"] > .progress-bar { width:44%; background:$darken;}
+[data-progressbar-value="45"] > .progress-bar { width:45%; background:$darken;}
+[data-progressbar-value="46"] > .progress-bar { width:46%; background:$darken;}
+[data-progressbar-value="47"] > .progress-bar { width:47%; background:$darken;}
+[data-progressbar-value="48"] > .progress-bar { width:48%; background:$darken;}
+[data-progressbar-value="49"] > .progress-bar { width:49%; background:$darken;}
+[data-progressbar-value="50"] > .progress-bar { width:50%; background:$darken;}
+
+
+[data-progressbar-value="51"] > .progress-bar { width:51%; background:$darken;}
+[data-progressbar-value="52"] > .progress-bar { width:52%; background:$darken;}
+[data-progressbar-value="53"] > .progress-bar { width:53%; background:$darken;}
+[data-progressbar-value="54"] > .progress-bar { width:54%; background:$darken;}
+[data-progressbar-value="55"] > .progress-bar { width:55%; background:$darken;}
+[data-progressbar-value="56"] > .progress-bar { width:56%; background:$darken;}
+[data-progressbar-value="57"] > .progress-bar { width:57%; background:$darken;}
+[data-progressbar-value="58"] > .progress-bar { width:58%; background:$darken;}
+[data-progressbar-value="59"] > .progress-bar { width:59%; background:$darken;}
+[data-progressbar-value="60"] > .progress-bar { width:60%; background:$darken;}
+
+[data-progressbar-value="61"] > .progress-bar { width:61%; background:$brand-primary;}
+[data-progressbar-value="62"] > .progress-bar { width:62%; background:$brand-primary;}
+[data-progressbar-value="63"] > .progress-bar { width:63%; background:$brand-primary;}
+[data-progressbar-value="64"] > .progress-bar { width:64%; background:$brand-primary;}
+[data-progressbar-value="65"] > .progress-bar { width:65%; background:$brand-primary;}
+[data-progressbar-value="66"] > .progress-bar { width:66%; background:$brand-primary;}
+[data-progressbar-value="67"] > .progress-bar { width:67%; background:$brand-primary;}
+[data-progressbar-value="68"] > .progress-bar { width:68%; background:$brand-primary;}
+[data-progressbar-value="69"] > .progress-bar { width:69%; background:$brand-primary;}
+[data-progressbar-value="70"] > .progress-bar { width:70%; background:$brand-primary;}
+
+[data-progressbar-value="71"] > .progress-bar { width:71%; background:$brand-primary;}
+[data-progressbar-value="72"] > .progress-bar { width:72%; background:$brand-primary;}
+[data-progressbar-value="73"] > .progress-bar { width:73%; background:$brand-primary;}
+[data-progressbar-value="74"] > .progress-bar { width:74%; background:$brand-primary;}
+[data-progressbar-value="75"] > .progress-bar { width:75%; background:$brand-primary;}
+[data-progressbar-value="76"] > .progress-bar { width:76%; background:$brand-primary;}
+[data-progressbar-value="77"] > .progress-bar { width:77%; background:$brand-primary;}
+[data-progressbar-value="78"] > .progress-bar { width:78%; background:$brand-primary;}
+[data-progressbar-value="79"] > .progress-bar { width:79%; background:$brand-primary;}
+[data-progressbar-value="80"] > .progress-bar { width:80%; background:$brand-primary;}
+
+[data-progressbar-value="81"] > .progress-bar { width:81%; background:lighten($brand-success,15%);}
+[data-progressbar-value="82"] > .progress-bar { width:82%; background:lighten($brand-success,15%);}
+[data-progressbar-value="83"] > .progress-bar { width:83%; background:lighten($brand-success,15%);}
+[data-progressbar-value="84"] > .progress-bar { width:84%; background:lighten($brand-success,14%);}
+[data-progressbar-value="85"] > .progress-bar { width:85%; background:lighten($brand-success,14%);}
+[data-progressbar-value="86"] > .progress-bar { width:86%; background:lighten($brand-success,14%);}
+[data-progressbar-value="87"] > .progress-bar { width:87%; background:lighten($brand-success,12%);}
+[data-progressbar-value="88"] > .progress-bar { width:88%; background:lighten($brand-success,12%);}
+[data-progressbar-value="89"] > .progress-bar { width:89%; background:lighten($brand-success,10%);}
+[data-progressbar-value="90"] > .progress-bar { width:90%; background:lighten($brand-success,10%);}
+
+[data-progressbar-value="91"] > .progress-bar { width:91%; background:lighten($brand-success,10%);}
+[data-progressbar-value="92"] > .progress-bar { width:92%; background:lighten($brand-success,9%);}
+[data-progressbar-value="93"] > .progress-bar { width:93%; background:lighten($brand-success,8%);}
+[data-progressbar-value="94"] > .progress-bar { width:94%; background:lighten($brand-success,7%);}
+[data-progressbar-value="95"] > .progress-bar { width:95%; background:lighten($brand-success,6%);}
+[data-progressbar-value="96"] > .progress-bar { width:96%; background:lighten($brand-success,5%);}
+[data-progressbar-value="97"] > .progress-bar { width:97%; background:lighten($brand-success,4%);}
+[data-progressbar-value="98"] > .progress-bar { width:98%; background:lighten($brand-success,3%);}
+[data-progressbar-value="99"] > .progress-bar { width:99%; background:lighten($brand-success,2%);}
+[data-progressbar-value="100"] > .progress-bar { 
+  width:100%; 
+  background:$brand-success;
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+  background-image:none !important;
+}
+
+[data-progressbar-value="100"]:before {
+  content: attr(data-progressbar-value);
+  top: -12px;
+  left:attr(data-progressbar-value) + px;
+}
+[data-progressbar-value="100"]:after {
+  content: "complete";
+  left:auto;
+  right:0px;
+  color:$brand-success;
+}

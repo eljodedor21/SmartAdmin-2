@@ -1,0 +1,1 @@
+define(["modules/maps/module"],function(a){"use strict";a.registerFactory("SmartMapInstances",["$q","$timeout",function(a,b){function c(a,b){f[a]=b}function d(a){delete f[a]}function e(c){function d(){b(function(){f[c]?f[c].then(function(a){e.resolve(a)}):d()},50)}var e=a.defer();return d(),e.promise}var f={};return{add:c,remove:d,getMap:e}}])});

@@ -1,0 +1,41 @@
+.bv-form {
+  .help-block {
+    margin-bottom: 0;
+  }
+  .tooltip-inner {
+    text-align: left;
+  }
+}
+
+.nav-tabs li {
+  &.bv-tab-success > a {
+    color: #3c763d;
+  }
+  &.bv-tab-error > a {
+    color: #a94442;
+  }
+}
+
+[class^="col-"] > .form-control + .form-control-feedback {
+  right: 13px;
+}
+
+.has-feedback.has-success .radio-inline + .form-control-feedback {
+  display: none !important;
+}
+
+/*
+ * CUSTOM CSS PAGE RELATED
+ */
+
+#buttonGroupForm .btn-group .form-control-feedback {
+  top: 0;
+  right: -30px;
+}
+
+#productForm {
+  .inputGroupContainer .form-control-feedback, .selectContainer .form-control-feedback {
+    top: 0;
+    right: -15px;
+  }
+}

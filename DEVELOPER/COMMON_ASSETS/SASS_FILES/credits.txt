@@ -1,0 +1,2 @@
+All SASS files were converted by juha.kela@ltronic.fi
+All SASS file compilations were configured to Compass by Alexandre Azevedo <alexndreazevedo@gmail.com>

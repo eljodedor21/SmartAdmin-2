@@ -1,0 +1,1 @@
+define(["modules/forms/module","summernote"],function(a){"use strict";a.registerDirective("smartEditSummernote",function(){return{restrict:"A",compile:function(a,b){a.removeAttr("smart-edit-summernote data-smart-edit-summernote"),a.on("click",function(){angular.element(b.smartEditSummernote).summernote({focus:!0})})}}})});

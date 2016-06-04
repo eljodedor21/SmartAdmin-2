@@ -1,0 +1,1 @@
+define(["modules/forms/module","ckeditor"],function(a){"use strict";a.registerDirective("smartCkEditor",function(){return{restrict:"A",compile:function(a){a.removeAttr("smart-ck-editor data-smart-ck-editor"),CKEDITOR.replace(a.attr("name"),{height:"380px",startupFocus:!0})}}})});

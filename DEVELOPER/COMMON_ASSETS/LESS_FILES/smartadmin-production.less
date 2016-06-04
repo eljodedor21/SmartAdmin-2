@@ -1,0 +1,68 @@
+/*!
+ * SmartAdmin - Responsive WebApp
+ *
+ * Copyright 2014 bootstraphunter.com
+ * Designed and built with all the love in the world by @bootstraphunt.
+ */
+
+// Core variables and mixins
+@import "variables.less";
+@import "3.3/mixins.less";
+@import "elements/elements.less";
+@import "custom.less"; // custom variable overrides
+
+// Plugins have been moved to "smartadmin-production-plugins.less" file (because IE cannot handle more than 4096 selectors in a stylesheet)
+
+// Libraries (Remove if not needed)
+@import "library/animation/animation-engine.less";
+@import "library/jqueryui/jquery-ui-1.10.3.custom.less";
+@import "library/flags/flags.less";
+@import "library/cursors/cursors.less";
+
+// Individual pages, sections, and components.  You can remove any of these sections you don't use
+
+// Components
+@import "smartadmin/component-fullscreen.less";
+@import "smartadmin/component-jqueryui.less"; // dependency: jquery-ui-1.10.3.custom.less
+@import "smartadmin/component-pricingtable.less";
+@import "smartadmin/component-pace.less";
+@import "smartadmin/component-smartchat.less";
+@import "smartadmin/component-smartforms.less";
+
+// Pages
+@import "smartadmin/page-error.less";
+@import "smartadmin/page-extr.less";
+
+// Sections
+@import "smartadmin/section-nestables.less";
+@import "smartadmin/section-calendar.less";
+@import "smartadmin/section-inbox.less";
+@import "smartadmin/section-profile.less";
+@import "smartadmin/section-search.less";
+@import "smartadmin/section-todo.less";
+@import "smartadmin/section-timeline.less";
+@import "smartadmin/section-forum.less";
+@import "smartadmin/section-ajax-msg.less";
+@import "smartadmin/section-projects.less";
+
+// Main THEME (Imports by order - do not change order)
+@import "smartadmin/main.less";
+@import "smartadmin/main-progress.less";
+@import "smartadmin/main-container-fix.less";
+@import "smartadmin/main-special-class.less";
+@import "smartadmin/main-form-radiocheck.less";
+@import "smartadmin/main-animated.less";
+@import "smartadmin/main-colorpallet.less";
+@import "smartadmin/main-colorblind.less";
+@import "smartadmin/main-page-footer.less";
+@import "smartadmin/main-responsive.less";
+
+// Patches
+@import "smartadmin/ie-fix.less";
+
+// UI (overrides and new)
+@import "smartadmin/top-menu.less";
+@import "smartadmin/no-menu.less";
+
+// Overrides
+@import "overrides.less";

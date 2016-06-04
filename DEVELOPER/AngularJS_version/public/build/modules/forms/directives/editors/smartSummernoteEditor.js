@@ -1,0 +1,1 @@
+define(["modules/forms/module","summernote"],function(a){"use strict";a.registerDirective("smartSummernoteEditor",function(){return{restrict:"A",compile:function(a,b){a.removeAttr("smart-summernote-editor data-smart-summernote-editor");var c={focus:!0,tabsize:2};b.height&&(c.height=b.height),a.summernote(c)}}})});

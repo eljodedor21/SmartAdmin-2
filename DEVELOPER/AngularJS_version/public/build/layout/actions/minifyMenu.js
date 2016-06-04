@@ -1,0 +1,1 @@
+define(["layout/module"],function(a){"use strict";a.registerDirective("minifyMenu",function(){return{restrict:"A",link:function(a,b){var c=$("body"),d=function(){c.hasClass("menu-on-top")||(c.toggleClass("minified"),c.removeClass("hidden-menu"),$("html").removeClass("hidden-menu-mobile-lock"))};b.on("click",d)}}})});

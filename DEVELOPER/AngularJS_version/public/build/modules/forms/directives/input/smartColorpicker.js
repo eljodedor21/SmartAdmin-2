@@ -1,0 +1,1 @@
+define(["modules/forms/module","lodash","bootstrap-colorpicker"],function(a,b){"use strict";return a.registerDirective("smartColorpicker",function(){return{restrict:"A",compile:function(a,c){a.removeAttr("smart-colorpicker data-smart-colorpicker");var d=b.pick(c,[""]),e=b.extend(d,{});a.colorpicker(e)}}})});

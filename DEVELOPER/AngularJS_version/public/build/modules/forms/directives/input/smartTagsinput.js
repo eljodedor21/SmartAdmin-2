@@ -1,0 +1,1 @@
+define(["modules/forms/module","bootstrap-tagsinput"],function(a){"use strict";return a.registerDirective("smartTagsinput",function(){return{restrict:"A",compile:function(a){a.removeAttr("smart-tagsinput data-smart-tagsinput"),a.tagsinput()}}})});

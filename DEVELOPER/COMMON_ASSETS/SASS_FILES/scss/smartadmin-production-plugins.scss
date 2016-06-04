@@ -1,0 +1,47 @@
+/*!
+ * SmartAdmin - Responsive WebApp
+ *
+ * Copyright 2014 bootstraphunter.com
+ * Designed and built with all the love in the world by @bootstraphunt.
+ */
+
+// Core variables and mixins
+@import "variables";
+@import "bootstrap/mixins";
+
+
+// Plugins imported alphabatically and by order (remove if not needed)
+
+@import "smartadmin/plugin-bootstrap-tree"; // new with v1.5
+@import "smartadmin/plugin-bootstrap-duallistbox"; // new with v1.5
+@import "smartadmin/plugin-bootstrap-markdown";
+@import "smartadmin/plugin-bootstrap-slider";
+@import "smartadmin/plugin-bootstrap-tagsinput";
+@import "smartadmin/plugin-bootstrap-timepicker";
+@import "smartadmin/plugin-bootstrap-validator"; // new with v1.5
+@import "smartadmin/plugin-cssemotions"; // new with v1.5
+@import "smartadmin/plugin-clockpicker";
+@import "smartadmin/plugin-colorpicker";
+@import "smartadmin/plugin-dataTables.bootstrap";
+@import "smartadmin/plugin-dataTables.colReorder";
+@import "smartadmin/plugin-dataTables.colVis";
+@import "smartadmin/plugin-dataTables.tableTools";
+@import "smartadmin/plugin-dataTables.responsive";
+@import "smartadmin/plugin-dataTables-cust";
+@import "smartadmin/plugin-dropzone";
+@import "smartadmin/plugin-easypiechart";
+@import "smartadmin/plugin-fd-slider";
+@import "smartadmin/plugin-fullcalendar";
+@import "smartadmin/plugin-ion";
+@import "smartadmin/plugin-jarviswidget";
+@import "smartadmin/plugin-jcrop";
+@import "smartadmin/plugin-jqgrid";
+@import "smartadmin/_plugin-jvectormap";
+@import "smartadmin/plugin-select2";
+@import "smartadmin/plugin-smartchat"; // new with v1.5
+@import "smartadmin/plugin-xeditable";
+@import "smartadmin/plugin-smart-notifications";
+@import "smartadmin/plugin-sparklines";
+@import "smartadmin/plugin-summernote";
+@import "smartadmin/plugin-superbox";
+@import "smartadmin/plugin-voicecommand";

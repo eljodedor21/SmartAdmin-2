@@ -1,0 +1,107 @@
+.tree {
+	min-height: 20px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+.tree li {
+	list-style-type: none;
+	margin: 0;
+	padding: 5px;
+	position: relative
+}
+
+.tree ul ul li:hover {
+	background: rgba(red(@black), green(@black), blue(@black),.015);
+}
+
+.tree li:before, .tree li:after {
+	content: '';
+	left: -20px;
+	position: absolute;
+	right: auto
+}
+.tree li:before {
+	border-left: 1px solid @gray-light;
+	bottom: 50px;
+	height: 100%;
+	top: -11px;
+	width: 1px;
+	-webkit-transition: "border-color 0.1s ease 0.1s";
+	-moz-transition: "border-color 0.1s ease 0.1s";
+	-o-transition: "border-color 0.1s ease 0.1s";
+	transition: "border-color 0.1s ease 0.1s";
+}
+.tree li:after {
+	border-top: 1px solid @gray-light;
+	height: 20px;
+	top: 18px;
+	width: 25px
+}
+.tree li span {
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px dotted @gray-light;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 3px 8px;
+	text-decoration: none;
+	-webkit-transition: color .2s ease .1s, background-color .2s ease .1s, border-color .3s ease .2s;
+	-moz-transition: color .2s ease .1s, background-color .2s ease .1s, border-color .3s ease .2s;
+	-o-transition: color .2s ease .1s, background-color .2s ease .1s, border-color .3s ease .2s;
+	transition: color .2s ease .1s, background-color .2s ease .1s, border-color .3s ease .2s;
+}
+.tree li.parent_li > span {
+	cursor: pointer;
+	padding: 7px;
+}
+.tree > ul > li:before, .tree > ul > li::after {
+	border: 0
+}
+.tree li:last-child::before {
+	height: 30px
+}
+.tree li.parent_li > span:hover, .tree li.parent_li > span:hover+ ul li span {
+	background: #eee;
+	border: 1px solid #94a0b4;
+	color: #000
+}
+
+.tree > ul {
+	padding-left: 0px;
+}
+
+.tree ul ul {
+	padding-left: 34px;
+	padding-top: 10px;
+}
+
+.tree li.parent_li > span:hover {
+	background-color: #DF8505;
+	border: 1px solid #C67605;
+	color: @white;
+}
+
+.tree li.parent_li > span:hover+ ul li::before {
+	border-left-color: #F89406;
+}
+
+.tree li.parent_li > span:hover+ ul li::after {
+	border-top-color: #F89406;
+}
+
+.tree li.parent_li > span:hover+ ul li span {
+	background: #FDDFB3 !important;
+	border: 1px solid #FAA937;
+	color: #000;
+}
+
+/* icons */
+.tree .fa.icon-minus-sign:before {
+	content:"\f056" !important;
+}
+
+.tree .fa.icon-plus-sign:before {
+	content:"\f055" !important;
+}
+

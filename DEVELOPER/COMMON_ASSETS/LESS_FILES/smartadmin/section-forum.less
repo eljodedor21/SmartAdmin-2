@@ -1,0 +1,58 @@
+/*
+ * FORUM PAGE
+ */	
+ 
+
+.table-forum thead tr {
+	background:none !important;
+}
+
+.table-forum thead tr th {
+	font-size: @font-size-base + 4;
+	font-weight:normal;
+	border-bottom-color: #F1F1F1;
+}
+
+.table-forum tr td {
+	border-top-style:dashed !important; 
+	padding-top:12px !important;
+	padding-bottom:12px !important;
+}
+
+.table-forum tr td h4 {
+	font-size: @font-size-base + 2;
+	font-weight:700;
+}
+
+.table-forum tr td h4 small{
+	font-size: @font-size-base;
+	display:block;
+	margin-top:2px;
+}
+
+.table-forum tr td > i{
+	margin-top:4px;
+	padding-left:10px;
+}
+
+.table-forum tr.locked h4 > a:before {
+	display: inline-block;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	content: "\f023";
+}
+
+.table-forum tr.closed h4 > a {
+	text-decoration:line-through;
+	color:#848484;
+	cursor:not-allowed;
+}
+
+.forum-attachment {
+	margin-top:20px;
+	display:block;
+}

@@ -1,0 +1,1 @@
+define(["app"],function(a){"use strict";return a.factory("Project",["$http",function(a){return{list:a.get("api/projects.json")}}])});

@@ -1,0 +1,1 @@
+define(["modules/forms/module","summernote"],function(a){"use strict";a.registerDirective("smartDestroySummernote",function(){return{restrict:"A",compile:function(a,b){a.removeAttr("smart-destroy-summernote data-smart-destroy-summernote"),a.on("click",function(){angular.element(b.smartDestroySummernote).destroy()})}}})});

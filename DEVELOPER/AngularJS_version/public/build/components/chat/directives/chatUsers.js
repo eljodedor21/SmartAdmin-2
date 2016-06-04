@@ -1,0 +1,1 @@
+define(["components/chat/module"],function(a){"use strict";a.registerDirective("chatUsers",["ChatApi",function(a){return{restrict:"E",replace:!0,templateUrl:"build/components/chat/directives/chat-users.tpl.html",scope:!0,link:function(b){b.open=!1,b.openToggle=function(){b.open=!b.open},b.chatUserFilter="",a.initialized.then(function(){b.chatUsers=a.users})}}}])});

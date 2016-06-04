@@ -1,0 +1,1 @@
+define(["app"],function(a){"use strict";return a.directive("recentProjects",["Project",function(a){return{restrict:"EA",replace:!0,templateUrl:"build/components/projects/recent-projects.tpl.html",scope:!0,link:function(b){a.list.then(function(a){b.projects=a.data}),b.clearProjects=function(){b.projects=[]}}}}])});

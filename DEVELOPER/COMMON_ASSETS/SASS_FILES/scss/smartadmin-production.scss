@@ -1,0 +1,66 @@
+/*!
+ * SmartAdmin - Responsive WebApp
+ *
+ * Copyright 2014 bootstraphunter.com
+ * Designed and built with all the love in the world by @bootstraphunt.
+ */
+
+// Core variables and mixins
+@import "variables";
+@import "bootstrap/mixins";
+@import "custom"; // custom variable overrides
+
+// Plugins have been moved to "smartadmin-production-plugins.less" file (because IE cannot handle more than 4096 selectors in a stylesheet)
+
+// Libraries (Remove if not needed)
+@import "library/animation/animation-engine";
+@import "library/jqueryui/jquery-ui-1.10.3.custom";
+@import "library/flags/flags";
+@import "library/cursors/cursors";
+
+// Individual pages, sections, and components.  You can remove any of these sections you don't use
+
+// Components
+@import "smartadmin/component-fullscreen";
+@import "smartadmin/component-jqueryui"; // dependency: jquery-ui-1.10.3.custom
+@import "smartadmin/component-pricingtable";
+@import "smartadmin/component-pace";
+@import "smartadmin/component-smartchat";
+@import "smartadmin/component-smartforms";
+
+// Pages
+@import "smartadmin/page-error";
+@import "smartadmin/page-extr";
+
+// Sections
+@import "smartadmin/section-nestables";
+@import "smartadmin/section-calendar";
+@import "smartadmin/section-inbox";
+@import "smartadmin/section-profile";
+@import "smartadmin/section-search";
+@import "smartadmin/section-todo";
+@import "smartadmin/section-timeline";
+@import "smartadmin/section-forum";
+@import "smartadmin/section-ajax-msg";
+@import "smartadmin/section-projects";
+
+// Main THEME (Imports by order - do not change order)
+@import "smartadmin/main";
+@import "smartadmin/main-progress";
+@import "smartadmin/main-container-fix";
+@import "smartadmin/main-special-class";
+@import "smartadmin/main-form-radiocheck";
+@import "smartadmin/main-animated";
+@import "smartadmin/main-colorpallet";
+@import "smartadmin/main-page-footer";
+@import "smartadmin/main-responsive";
+
+// Patches
+@import "smartadmin/ie-fix";
+
+// UI (overrides and new)
+@import "smartadmin/top-menu";
+@import "smartadmin/no-menu";
+
+// Overrides
+@import "overrides";
